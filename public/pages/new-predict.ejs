@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="max-w-4xl mx-auto mb-8">
+    <div class="max-w-5xl mx-auto mb-8">
       <div class="flex gap-3 items-center">
         <a
           href="/"
@@ -23,7 +23,7 @@
         <p class="text-lg font-semibold text-white">Predict New Property</p>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
       <form
         hx-post="/predict/new"
         hx-target="#result"
@@ -93,9 +93,14 @@
               type="number"
               name="parking"
               class="input"
-              placeholder="longtitude"
+              placeholder="parking"
+              min="0"
+              max="1"
               required
             />
+            <span class="text-xs text-white/40 mt-0.5">
+              Please enter a value between 0 and 1
+            </span>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -111,9 +116,14 @@
               type="number"
               name="pool"
               class="input"
-              placeholder="longtitude"
+              placeholder="Pool"
+              min="0"
+              max="1"
               required
             />
+            <span class="text-xs text-white/40 mt-0.5">
+              Please enter a value between 0 and 1
+            </span>
           </div>
           <div>
             <label
@@ -127,9 +137,14 @@
               type="number"
               name="beachfront"
               class="input"
-              placeholder="longtitude"
+              placeholder="Beachfront"
+              min="0"
+              max="1"
               required
             />
+            <span class="text-xs text-white/40 mt-0.5">
+              Please enter a value between 0 and 1
+            </span>
           </div>
         </div>
         <div>
