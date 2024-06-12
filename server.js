@@ -115,6 +115,7 @@ router.post('/predict/new', async (req, res) => {
         </div>
       </div>
     `
+    
     res.send(html)
   } catch (error) {
     console.log(error)

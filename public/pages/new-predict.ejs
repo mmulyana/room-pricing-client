@@ -30,6 +30,108 @@
         hx-swap="innerHTML"
         class="flex flex-col gap-6"
       >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="beds"
+              class="block text-sm font-medium mb-2 dark:text-white"
+            >
+              Beds
+            </label>
+            <input
+              id="beds"
+              type="number"
+              name="beds"
+              class="input"
+              placeholder="Beds"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="bedroom"
+              class="block text-sm font-medium mb-2 dark:text-white"
+            >
+              Bedroom
+            </label>
+            <input
+              id="bedroom"
+              type="number"
+              name="bedroom"
+              class="input"
+              placeholder="Bedroom"
+              required
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="bathroom"
+              class="block text-sm font-medium mb-2 dark:text-white"
+            >
+              Bathroom
+            </label>
+            <input
+              id="bathroom"
+              type="number"
+              name="bathroom"
+              class="input"
+              placeholder="longtitude"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="parking"
+              class="block text-sm font-medium mb-2 dark:text-white"
+            >
+              Parking
+            </label>
+            <input
+              id="parking"
+              type="number"
+              name="parking"
+              class="input"
+              placeholder="longtitude"
+              required
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="pool"
+              class="block text-sm font-medium mb-2 dark:text-white"
+            >
+              Pool
+            </label>
+            <input
+              id="pool"
+              type="number"
+              name="pool"
+              class="input"
+              placeholder="longtitude"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="beachfront"
+              class="block text-sm font-medium mb-2 dark:text-white"
+            >
+              Beach Front
+            </label>
+            <input
+              id="beachfront"
+              type="number"
+              name="beachfront"
+              class="input"
+              placeholder="longtitude"
+              required
+            />
+          </div>
+        </div>
         <div>
           <label
             for="check_in"
@@ -61,22 +163,6 @@
         </div>
         <div>
           <label
-            for="distance"
-            class="block text-sm font-medium mb-2 dark:text-white"
-          >
-            Distance To Coastline
-          </label>
-          <input
-            id="distance"
-            type="number"
-            name="distance_to_coastline"
-            placeholder="distance to coastline"
-            class="input"
-            required
-          />
-        </div>
-        <div>
-          <label
             for="lat"
             class="block text-sm font-medium mb-2 dark:text-white"
           >
@@ -88,6 +174,9 @@
             name="lat"
             placeholder="latitude"
             class="input"
+            step="0.000001"
+            min="-180"
+            max="180"
             required
           />
         </div>
@@ -104,6 +193,9 @@
             name="lng"
             class="input"
             placeholder="longtitude"
+            step="0.000001"
+            min="-180"
+            max="180"
             required
           />
         </div>
