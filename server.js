@@ -79,7 +79,6 @@ router.post('/predict', async (req, res) => {
 
 router.post('/predict/new', async (req, res) => {
   try {
-    console.log(JSON.stringify(req.body))
     const options = {
       method: 'POST',
       body: JSON.stringify(req.body),
